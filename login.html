@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background:linear-gradient(135deg,#4facfe,#00f2fe);
+        }
+
+        .login-container{
+            background:#fff;
+            padding:30px;
+            border-radius:15px;
+            width:350px;
+            text-align:center;
+            box-shadow:0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .logo{
+            width:80px;
+            height:80px;
+            margin-bottom:20px;
+        }
+
+        h2{
+            margin-bottom:20px;
+            color:#333;
+        }
+
+        .input-box{
+            width:100%;
+            padding:12px;
+            margin:10px 0;
+            border:1px solid #ccc;
+            border-radius:8px;
+            font-size:16px;
+        }
+
+        .login-btn{
+            width:100%;
+            padding:12px;
+            background:#4facfe;
+            color:white;
+            border:none;
+            border-radius:8px;
+            font-size:16px;
+            cursor:pointer;
+            margin-top:10px;
+        }
+
+        .login-btn:hover{
+            background:#2196f3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+
+        <!-- Replace logo.png with your logo -->
+        <img src="logo.png" alt="Logo" class="logo">
+
+        <h2>Login</h2>
+
+        <form>
+            <input type="text" placeholder="Username" class="input-box" required>
+            <input type="password" placeholder="Password" class="input-box" required>
+            <button type="submit" class="login-btn">Login</button>
+        </form>
+
+    </div>
+
+</body>
+</html>
