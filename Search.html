@@ -1,24 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search Page</title>
-
+    <title>Search Form</title>
     <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family: Arial, sans-serif;
-        }
-
         body{
             height:100vh;
             display:flex;
             justify-content:center;
             align-items:center;
-            background:#f4f4f4;
+            font-family:Arial,sans-serif;
         }
 
         .search-container{
@@ -27,38 +17,36 @@
         }
 
         .search-box{
-            width:350px;
-            padding:12px 15px;
-            font-size:16px;
-            border:2px solid #ddd;
-            border-radius:25px;
-            outline:none;
+            width:300px;
+            padding:10px;
+            border-radius:20px;
+            border:1px solid #ccc;
         }
 
         .search-btn{
-            padding:12px 25px;
-            font-size:16px;
+            padding:10px 20px;
             border:none;
-            border-radius:25px;
-            background:#007BFF;
-            color:white;
+            border-radius:20px;
             cursor:pointer;
-        }
-
-        .search-btn:hover{
-            background:#0056b3;
         }
     </style>
 </head>
 <body>
-  
-    <div class="search-container">
-      
-        <form action="https://formsubmit.co/vignesh200631@gmail.com" method="POST" />
-    
-        <input type="text" class="search-box" placeholder="Search here...">
-        <button class="search-btn">Search</button>
-    </div>
+
+<form action="https://formsubmit.co/YOUR_EMAIL@gmail.com" method="POST" class="search-container">
+
+    <input
+        type="text"
+        name="message"
+        class="search-box"
+        placeholder="Enter your message..."
+        required>
+
+    <button type="submit" class="search-btn">
+        Search
+    </button>
+
+</form>
 
 </body>
 </html>
